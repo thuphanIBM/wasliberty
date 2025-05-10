@@ -6,7 +6,7 @@ WORKDIR /config
 
 # Add Liberty server configuration including all necessary features
 #COPY --chown=1001:0  server.xml /config/
-COPY --chown=1001:0  EDS-liberty.xml /config/
+#COPY --chown=1001:0  EDS-liberty.xml /config/
 
 
 # Modify feature repository (optional)
@@ -20,6 +20,7 @@ RUN features.sh
 
 # Add application
 COPY --chown=1001:0  apps /apps
+COPY --chown=1001:0  apps /config/dropins/
 
 # This script will add the requested server configurations, apply any interim fixes and populate caches to optimize runtime
 RUN configure.sh
