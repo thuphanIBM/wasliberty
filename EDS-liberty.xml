@@ -1,1 +1,15 @@
+<server>
+    <application type="war" contextRoot="eds" id="navigator" location="${server.config.dir}/apps/sampleEDSService.war"
+                 name="eds">
+        <classloader />
+        <application-bnd>
+            <security-role name="Everyone">
+                    <special-subject type="ALL_AUTHENTICATED_USERS"/>
+            </security-role>
+             <security-role name="Everyone">
+                <special-subject type="EVERYONE"/>
+            </security-role>
+        </application-bnd>
+</application>
 
+</server>
