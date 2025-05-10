@@ -5,7 +5,7 @@ ARG VERBOSE=false
 WORKDIR /config
 
 # Add Liberty server configuration including all necessary features
-COPY --chown=1001:0  server.xml /config/
+#COPY --chown=1001:0  server.xml /config/
 COPY --chown=1001:0  EDS-liberty.xml /config/
 
 
