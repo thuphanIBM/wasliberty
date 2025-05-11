@@ -6,6 +6,7 @@
         <!-- <feature></feature> -->
     </featureManager>
     <variable name="defaultHostName" value="localhost"/>
+    
 
     <!-- To access this server from a remote client add a host attribute to the following element, e.g. host="*" -->
     <httpEndpoint id="defaultHttpEndpoint" 
@@ -14,6 +15,9 @@
                 httpsPort="9443"
                 protocolVersion="http/1.1">
     </httpEndpoint>
+
+    <webApplication location="samplesampleEDSService.war" contextRoot="/sampleeds" />
+    
     <!-- Automatically expand WAR files and EAR files -->
     <applicationManager autoExpand="false"/>
     <logging traceSpecification="*=info" consoleLogLevel="INFO"/>

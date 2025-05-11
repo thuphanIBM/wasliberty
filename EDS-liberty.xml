@@ -1,15 +1,6 @@
 <server>
     <application type="war" contextRoot="sampleeds" id="sampleeds" location="${server.config.dir}/apps/sampleEDSService.war"
                  name="sampleeds">
-        <classloader />
-        <application-bnd>
-            <security-role name="Everyone">
-                    <special-subject type="ALL_AUTHENTICATED_USERS"/>
-            </security-role>
-             <security-role name="Everyone">
-                <special-subject type="EVERYONE"/>
-            </security-role>
-        </application-bnd>
-</application>
+    </application>
 
 </server>
