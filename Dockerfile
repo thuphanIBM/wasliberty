@@ -6,7 +6,7 @@ WORKDIR /config
 
 # Add Liberty server configuration including all necessary features
 COPY --chown=1001:0  server.xml /config/
-#COPY --chown=1001:0  EDS-liberty.xml /config/dropins
+COPY --chown=1001:0  EDS-liberty.xml /config/configDropins/defaults/
 
 # Modify feature repository (optional)
 #COPY --chown=1001:0 featureUtility.properties /opt/ibm/wlp/etc/
