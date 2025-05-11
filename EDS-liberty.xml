@@ -1,6 +1,6 @@
 <server>
-    <application type="war" contextRoot="eds" id="navigator" location="${server.config.dir}/apps/sampleEDSService.war"
-                 name="eds">
+    <application type="war" contextRoot="sampleeds" id="sampleeds" location="${server.config.dir}/apps/sampleEDSService.war"
+                 name="sampleeds">
         <classloader />
         <application-bnd>
             <security-role name="Everyone">
