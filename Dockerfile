@@ -7,13 +7,13 @@ ARG VERBOSE=false
 COPY --chown=1001:0  server.xml /config/
 
 # Modify feature repository (optional)
-COPY --chown=1001:0 featureUtility.properties /opt/ibm/wlp/etc/
+#COPY --chown=1001:0 featureUtility.properties /opt/ibm/wlp/etc/
 
 # This script will add the requested XML snippets to enable Liberty features and grow the image to be fit-for-purpose using featureUtility.
 RUN features.sh
 
 # Add interim fixes (optional)
-COPY --chown=1001:0  interim-fixes /opt/ibm/fixes/
+#COPY --chown=1001:0  interim-fixes /opt/ibm/fixes/
 
 # Add application
 COPY --chown=1001:0  apps /config/dropins/
