@@ -1,6 +1,0 @@
-<server>
-    <application type="war" contextRoot="sampleeds" id="sampleeds" location="${server.config.dir}/apps/sampleEDSService.war"
-                 name="sampleeds">
-    </application>
-
-</server>

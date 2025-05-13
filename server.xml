@@ -4,6 +4,9 @@
     <!-- Enable features -->
     <featureManager>
         <!-- <feature></feature> -->
+         <feature>javaee-8.0</feature>
+         <feature>servlet-4.0</feature>
+         <!--feature>jaxws-2.2</feature-->
     </featureManager>
     <variable name="defaultHostName" value="localhost"/>
     
@@ -16,7 +19,7 @@
                 protocolVersion="http/1.1">
     </httpEndpoint>
 
-    <webApplication id="ap1" location="samplesampleEDSService.war" contextRoot="/sampleeds" />
+    <!--webApplication id="eds1" location="/config/dropins/sampleEDSService.war" contextRoot="/eds" /-->
     
     <!-- Automatically expand WAR files and EAR files -->
     <applicationManager autoExpand="false"/>
